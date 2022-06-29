@@ -1,0 +1,76 @@
+<mat-toolbar color="primary">This is dashboard</mat-toolbar>
+<div class="container">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="15px">
+    <div fxLayout="row" fxLayout="column" fxFlex>
+      <mat-card class="example-card">
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-content>
+          <p>This card indeterminates progress bar.</p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div fxLayout="row" fxLayout="column" fxFlex>
+      <mat-card class="example-card">
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-content>
+          <p>This card indeterminates progress bar.</p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div fxLayout="row" fxLayout="column" fxFlex>
+      <mat-card class="example-card">
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-content>
+          <p>This card indeterminates progress bar.</p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="15px">
+    <div fxLayout="column" fxFlex>
+      <mat-card class="example-card" fxFlex="1 1" style="position:relative">
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-content>
+          <div>
+            <div style="display: block; width: 600px;">
+              <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                [legend]="barChartLegend">
+              </canvas>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div fxLayout="column" fxFlex>
+      <mat-card class="example-card" fxFlex="1 1" style="position:relative">
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-content>
+          <div>
+            <div style="display: block; width: 600px;">
+              <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                [legend]="barChartLegend">
+              </canvas>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

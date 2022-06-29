@@ -1,0 +1,90 @@
+<div class="navbar-container">
+  <app-header class="fixed-topnav" fxHide.gt-xs></app-header>
+  <mat-sidenav-container class="navbar-sidenav-container" [hasBackdrop]="hasBackdrop.value" autosize>
+    <mat-sidenav #appDrawer class="example-sidenav" fixedTopGap="56" [mode]="mode.value" opened="true"
+      (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+      <mat-nav-list>
+        <h3 mat-subheader *ngIf="isExpanded || isShowing" style="min-width: 220px !important;">Home</h3>
+        <a mat-list-item [routerLink]="['/dash']" routerLinkActive="active">
+          <mat-icon mat-list-icon>
+            dashboard
+          </mat-icon>
+          <p mat-line *ngIf="isExpanded || isShowing"> Dashboard </p>
+        </a>
+        <a mat-list-item [routerLink]="['/cust']" routerLinkActive="active">
+          <mat-icon mat-list-icon>
+            business
+          </mat-icon>
+          <p mat-line *ngIf="isExpanded || isShowing"> Customers </p>
+        </a>
+        <mat-divider></mat-divider>
+        <h3 mat-subheader *ngIf="isExpanded || isShowing" style="min-width: 220px !important;">Ressources</h3>
+        <a mat-list-item href="https://material.angular.io/" target="_blank">
+          <mat-icon mat-list-icon>
+            link
+          </mat-icon>
+          <p mat-line *ngIf="isExpanded || isShowing"> Material Components </p>
+        </a>
+        <mat-divider></mat-divider>
+        <h3 mat-subheader *ngIf="isExpanded || isShowing" style="min-width: 220px !important;">About</h3>
+        <a mat-list-item [routerLink]="['/about']" routerLinkActive="active">
+          <mat-icon mat-list-icon>
+            info
+          </mat-icon>
+          <p mat-line *ngIf="isExpanded || isShowing"> About me</p>
+        </a>
+        <a mat-list-item [routerLink]="['/dfd']" routerLinkActive="active">
+          <mat-icon mat-list-icon>
+            link
+          </mat-icon>
+          <p mat-line *ngIf="isExpanded || isShowing"> Github </p>
+        </a>
+        <mat-list-item id="push-bottom" (click)="isExpanded = !isExpanded">
+          <mat-icon mat-list-icon>
+            skip_previous
+          </mat-icon>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav #appDrawerTwo mode="over" fixedTopGap="56" class="sidenav" opened="false" position="end" hasBackdrop="false">
+      <mat-nav-list>
+        <h1 mat-subheader>Settings</h1>
+        <h3 mat-subheader>Dark Mode</h3>
+        <mat-slide-toggle class="setting-container" [checked]="isThemeDark" (click)="$event.stopPropagation()"
+          (change)="toggleDarkness()"></mat-slide-toggle>
+        <h3 mat-subheader>Color</h3>
+        <mat-grid-list cols="2" class="theme-selectors-container">
+          <mat-grid-tile *ngFor="let theme of themes">
+            <button mat-button class="theme-selector" (click)="$event.stopPropagation(); setActiveTheme(theme)">
+              <div [attr.class]="theme + ' theme-primary center'">
+                <div [attr.class]="theme + ' theme-accent'"></div>
+                <div [attr.class]="theme + ' theme-warn'"></div>
+              </div>
+            </button>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <h3 mat-subheader>SideNav</h3>
+        <mat-form-field appearance="fill" class="setting-container">
+          <mat-label>Sidenav mode</mat-label>
+          <mat-select #mode value="side">
+            <mat-option value="side">Side</mat-option>
+            <mat-option value="over">Over</mat-option>
+            <mat-option value="push">Push</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="setting-container">
+          <mat-label>Has backdrop</mat-label>
+          <mat-select #hasBackdrop>
+            <mat-option>Unset</mat-option>
+            <mat-option [value]="true">True</mat-option>
+            <mat-option [value]="false">False</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content">
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

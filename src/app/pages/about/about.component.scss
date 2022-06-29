@@ -1,0 +1,27 @@
+mat-icon {
+    color: rgb(200, 0, 0);
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.flex-box {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.flags_img {
+	background-image: url('../../../assets/images/flag-icons.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 50px;
+	height: 38px;
+	background-color: transparent;
+	vertical-align: middle;
+	background-position: 51px 39px;
+	margin: 8px;
+}
+
+.iso_TN {background-position: -561px -78px}

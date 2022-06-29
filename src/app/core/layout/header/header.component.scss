@@ -1,0 +1,187 @@
+.navbar-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .navbar {
+    z-index: 2;
+  }
+  
+  .navbar-brand {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar-is-mobile .navbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+  
+  .navbar-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+             causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+  
+  .navbar-is-mobile .navbar-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+             `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  
+  /*Set sidenav width*/
+  
+  mat-sidenav {
+    min-width: 180px !important;
+    border-right: 1px solid #eee;
+    box-shadow: 6px 0 6px rgba(0, 0, 0, .1);
+    /* background-color:rgb(63, 81, 181); */
+  }
+  
+  /* Set height of wrapper to stop content from moving up & down */
+  
+  .progress-bar-container {
+    height: 5px;
+  }
+  
+  a.mat-list-item.active {
+    background: rgba(0, 0, 0, .04);
+  }
+  
+  #push-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @mixin size($width, $height: null) {
+    width: $width;
+    height: if($height==null, $width, $height);
+  }
+  
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .theme-selectors-container {
+    width: 190px;
+    margin: 0 8px;
+  }
+  
+  button.theme-selector {
+    @include size(80px);
+  }
+  
+  div.theme-primary {
+    @include size(70px);
+    border-radius: 50%;
+  }
+  
+  div.theme-accent {
+    @include size(25px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  div.theme-warn {
+    @include size(15px);
+    position: absolute;
+    bottom: 7%;
+    left: 20%;
+    transform: rotate(45deg);
+  }
+  
+  .theme-check {
+    color: white;
+    font-size: 3.2em;
+  }
+  
+  .theme-selector-is-dark {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sample-elements {
+    margin: 16px;
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  
+  // For navigation (sidenav/toolbar). Isn't related to dynamic-theme-switching:
+  .sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .navbar-spacer {
+    flex: 1 1 auto;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    transition: all 250ms ease-in-out;
+  }
+  .main-header{
+    @extend header;
+    &.hidden{
+      opacity: 0;
+    }
+  }
+  .search-block{
+    width: 0%;
+    right: 0;
+    @extend header;
+    background: #fff;
+    &.active{
+      width: 100%;
+      flex: 1 1 auto;
+    }
+    .search-control{
+      flex: 1;
+      font-size: 1rem;
+      border: 0;
+      outline: none;
+      padding-left: 10px;
+    }
+  }
