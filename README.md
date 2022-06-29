@@ -6,15 +6,15 @@ by [@yaichmelek](https://linkedin.com/in/yaich-melek)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
+## Demo
 ![Gif](https://user-images.githubusercontent.com/107370774/176468885-63a086eb-a76d-4377-abfb-9e56eb5b84f2.gif)
 
+## Screenshots
 ![Screen shot](https://user-images.githubusercontent.com/107370774/176471749-a885fc92-1bb7-4ff0-80cf-cf3f2c6d0ebf.png)
 
 ## Table of Content
 
 - [Getting Started](#getting-started)
-- [Useful Commands](#useful-commands)
-- [Make It Your Own](#make-it-your-own)
 - [Features](#features)
 - [Stack](#stack)
 - [Development server](#development-server)
