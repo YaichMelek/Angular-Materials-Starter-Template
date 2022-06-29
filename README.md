@@ -35,11 +35,11 @@ npm start
 
 ## Features
 
-- custom themes support (4 themes included)
+- Custom themes support (4 themes included)
 - Dark Mode
 - Sidenav Setting
-- fully responsive design
-- angular-material and custom components in `SharedModule`
+- Fully responsive design
+- Angular-material and custom components in `SharedModule`
 
 ## Stack
 
