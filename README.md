@@ -1,6 +1,51 @@
-# TemplateAngular
+# Angular Materials Starter Template
+
+by [@yaichmelek](https://linkedin.com/in/yaich-melek)
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+
+![Gif](https://user-images.githubusercontent.com/107370774/176468885-63a086eb-a76d-4377-abfb-9e56eb5b84f2.gif)
+
+![Screen shot](https://user-images.githubusercontent.com/107370774/176471749-a885fc92-1bb7-4ff0-80cf-cf3f2c6d0ebf.png)
+
+## Table of Content
+
+- [Getting Started](#getting-started)
+- [Useful Commands](#useful-commands)
+- [Make It Your Own](#make-it-your-own)
+- [Features](#features)
+- [Stack](#stack)
+- [Development server](#development-server)
+- [Code scaffolding](#code-scaffolding)
+- [Running end-to-end tests](#running-end-to-end-tests)
+- [Further help](#further-help)
+
+## Getting started
+
+```bash
+git clone https://github.com/YaichMelek/Angular-Materials-Starter-Template.git new-project
+cd new-project
+npm install
+npm start
+```
+
+
+
+## Features
+
+- custom themes support (4 themes included)
+- Dark Mode
+- Sidenav Setting
+- fully responsive design
+- angular-material and custom components in `SharedModule`
+
+## Stack
+
+- Angular
+- Angular Material
+- Bootstrap
 
 ## Development server
 
