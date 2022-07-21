@@ -1,5 +1,5 @@
 # Angular Materials Starter Template
-![Angular](https://user-images.githubusercontent.com/107370774/176490787-7bb12010-072e-484b-b6cf-163cf27dd6f0.jpg)
+![dfsqf](https://user-images.githubusercontent.com/107370774/180197205-573381bb-eeb5-47c8-9036-8f4359529bb9.jpg)
 
 by [@yaichmelek](https://linkedin.com/in/yaich-melek)
 
